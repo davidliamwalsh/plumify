@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Plumify</title>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/play%20icon.png" width="150" height="50" alt="">
+            </a>
+            <div class="user-image pull">
+
+                <img src="imgs/user-image.png" alt="" width="60" height="60" id="userImage">
+                <div class="dropdown-content">
+                    <a href="#"><img src="imgs/help-icon@2x.png" alt="">Help &amp; Support</a>
+                    <a href="#"><img src="imgs/preferences-icon@2x.png" alt="">Preference</a>
+                    <a href="#"><img src="imgs/logout-icon@2x.png" alt="">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="col-md-8">
+
+            <div class="library">
+                <div class="navbar">
+                    <h1 id="your-library">Your Library</h1>
+                    <button id="discover">Discover Artists</button>
+                </div>
+
+                <div class="container">
+                    <div id="grid-library">
+
+
+                        <img src="imgs/library/album-1@2x.png" onclick="StartOrStop('audio/Track1.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-2@2x.png" onclick="StartOrStop('audio/Track3.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-3@2x.png" onclick="StartOrStop('audio/Track2.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-4@2x.png" onclick="StartOrStop('audio/Track4.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-5@2x.png" onclick="StartOrStop('audio/Track5.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-6@2x.png" onclick="StartOrStop('audio/Track3.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-7@2x.png" onclick="StartOrStop('audio/Track4.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-8@2x.png" onclick="StartOrStop('audio/Track1.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-9@2x.png" onclick="StartOrStop('audio/Track5.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-10@2x.png" onclick="StartOrStop('audio/Track2.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-11@2x.png" onclick="StartOrStop('audio/Track3.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-12@2x.png" onclick="StartOrStop('audio/Track1.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-13@2x.png" onclick="StartOrStop('audio/Track4.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-14@2x.png" onclick="StartOrStop('audio/Track2.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-15@2x.png" onclick="StartOrStop('audio/Track3.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-15@2x.png" onclick="StartOrStop('audio/Track1.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-16@2x.png" onclick="StartOrStop('audio/Track4.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-17@2x.png" onclick="StartOrStop('audio/Track5.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-18@2x.png" onclick="StartOrStop('audio/Track2.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-19@2x.png" onclick="StartOrStop('audio/Track1.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-20@2x.png" onclick="StartOrStop('audio/Track2.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-21@2x.png" onclick="StartOrStop('audio/Track3.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-22@2x.png" onclick="StartOrStop('audio/Track1.mp3')">
+                        <audio id="myAudio"></audio>
+                        <img src="imgs/library/album-23@2x.png" onclick="StartOrStop('audio/Track2.mp3')">
+                        <audio id="myAudio"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="activity">
+                <div class="navbar">
+                    <h1 id="myActivity">Activity</h1>
+                </div>
+                <li><img src="imgs/avatar-2@2x.png" alt="">
+                    <p1>
+                        <span1 id="topOne">Ned Stark</span1><br>
+                        <span2 id="bottomOne">listened to</span2> <a href="#">foobar</a></p1>
+                </li>
+                <div class="clearfix"></div>
+                <li><img src="imgs/avatar-2@2x.png" alt="">
+                    <p1>
+                        <span1 id="topOne">Ned Stark</span1><br>
+                        <span2 id="bottomOne">listened to</span2> <a href="#">foobar</a></p1>
+                </li>
+                <div class="clearfix"></div>
+                <li><img src="imgs/avatar-2@2x.png" alt="">
+                    <p1>
+                        <span1 id="topOne">Ned Stark</span1><br>
+                        <span2 id="bottomOne">listened to</span2> <a href="#">foobar</a></p1>
+                </li>
+                <div class="clearfix"></div>
+                <li><img src="imgs/avatar-2@2x.png" alt="">
+                    <p1>
+                        <span1 id="topOne">Ned Stark</span1><br>
+                        <span2 id="bottomOne">listened to</span2> <a href="#">foobar</a></p1>
+                </li>
+                <div class="clearfix"></div>
+                <li><img src="imgs/avatar-2@2x.png" alt="">
+                    <p1>
+                        <span1 id="topOne">Ned Stark</span1><br>
+                        <span2 id="bottomOne">listened to</span2> <a href="#">foobar</a></p1>
+                </li>
+                <div class="clearfix"></div>
+                <div class="container">
+                    <button class="activityButton">Prev</button><button class="activityButton">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+
+            <div class="col-md-9">
+
+                <li>
+                    <img src="imgs/album-21@2x.png" alt="" id="footerAlbum">
+                    
+                    <div class="container">
+                    <p id="trackDetails">Foobar Track</p>
+                    
+                    <p><img src="imgs/video-play-icon-6.png" alt="" id="playShuffleRepeat">
+                    
+                    <img src="imgs/shuffle.png" alt="" id="playShuffleRepeat">
+                    <img src="imgs/repeat.png" alt="" id="playShuffleRepeat"></p>
+                    </div>
+                </li>
+
+            </div>
+
+            <div class="col-sm-3">
+                <li>
+                    <img src="imgs/avatar-5@2x.png" alt="">
+                    <p2>
+                        <span3 id="topOne">Ned Stark</span3><br>
+                        <span4 id="bottomOne">Shared her</span4> <a href="#">foobar</a>
+                        <span4 id="bottomOne"> playlist</span4>
+                    </p2>
+                </li>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function StartOrStop(audioFile) {
+
+            var audie = document.getElementById("myAudio");
+
+            if (!audie.src || audie.src !== audioFile) audie.src = audioFile;
+            console.log(audie.paused);
+
+            if (audie.paused == false) {
+
+                console.log('pause');
+                audie.pause();
+            } else {
+                console.log('play');
+                audie.play();
+            }
+        }
+        
+        
+        
+
+    </script>
+</body>
+
+</html>
